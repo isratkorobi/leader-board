@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap flex & grid</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .icon {
+            color: #FFC014;
+        }
+
+        .blank {
+            color: #AEAEAE
+        }
+
+        .number {
+            color: #AEAEAE
+        }
+
+        .button {
+            background-color: #c7626e41;
+        }
+
+        .text {
+            color: #FF4A60;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body style="background-color:#E5E5E5;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #562EFF;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="image/icons/logo.png" height="51" width="41" class="d-inline-block align-text-center"
+                    alt=""><span class="ms-3">Idea</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center text-dark">
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="#">Works</a>
+                    </li>
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="#">
+                            <img src="image/icons/profile.png" alt="">
+                        </a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="container bg-white">
+            <div>
+                <h4 class="text-primary my-5">Top Players</h4>
+                <div class="row gy-3 pb-3">
+                    <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center">
+                        <img width="56px" height="56px" src="image/players/player-1.png" alt="">
+                        <h4 class="ms-3 d-flex">John Smith</h4>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-space-between">
+                        <img width="56px" height="56px" src="image/players/player-2.png" alt="">
+                        <h4 class="ms-3">John Smith</h4>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-space-between">
+                        <img width="56px" height="56px" src="image/players/player-3.png" alt="">
+                        <h4 class="ms-3">John Smith</h4>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-space-between">
+                        <img width="56px" height="56px" src="image/players/player-4.png" alt="">
+                        <h4 class="ms-3">John Smith</h4>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-space-between">
+                        <img width="56px" height="56px" src="image/players/player-5.png" alt="">
+                        <h4 class="ms-3">John Smith</h4>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex align-items-center justify-content-space-between">
+                        <img width="56px" height="56px" src="image/players/player-6.png" alt="">
+                        <h4 class="ms-3">John Smith</h4>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- <h4 class="text-primary my-4">Top Blogs</h4>
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-12 d-flex">
+                    <img width="177px" src="image/blogs/blog-1.png" alt="">
+                    <div class="ps-3">
+                        <h4>13 of My Favorite
+                            UI/UX Goodies</h4>
+                        <p>By <a href="#">Danny Sapio</a></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 d-flex">
+                    <img width="177px" src="image/blogs/blog-2.png" alt="">
+                    <div class="ps-3">
+                        <h4>13 of My Favorite
+                            UI/UX Goodies</h4>
+                        <p>By <a href="#">Danny Sapio</a></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 d-flex">
+                    <img width="177px" src="image/blogs/blog-3.png" alt="">
+                    <div class="ps-3">
+                        <h4>13 of My Favorite
+                            UI/UX Goodies</h4>
+                        <p>By <a href="#">Danny Sapio</a></p>
+                    </div>
+                </div>
+            </div> -->
+
+            <h4 class="text-primary my-4">Top Blogs</h4>
+            <div class="row g-4 pb-5">
+                <div class="col-md-12 col-lg-6 d-flex">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <img width="177px" src="image/blogs/blog-1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-6 ps-2">
+                            <h4>13 of My Favorite
+                                UI/UX Goodies</h4>
+                            <p>By <a href="#">Danny Sapio</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-6 d-flex">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <img width="177px" src="image/blogs/blog-2.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-6 ps-2">
+                            <h4>13 of My Favorite
+                                UI/UX Goodies</h4>
+                            <p>By <a href="#">Danny Sapio</a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-12 col-lg-6 d-flex">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <img width="177px" src="image/blogs/blog-3.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-6 ps-2">
+                            <h4>13 of My Favorite
+                                UI/UX Goodies</h4>
+                            <p>By <a href="#">Danny Sapio</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 d-flex">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <img width="177px" src="image/blogs/blog-4.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-md-6 ps-2">
+                            <h4>13 of My Favorite
+                                UI/UX Goodies</h4>
+                            <p>By <a href="#">Danny Sapio</a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="container bg-white pt-2 mt-4">
+            <h4 class="text-primary my-4">Top courses</h4>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card mb-4 p-2" style="width: 22rem;">
+                        <img src="image/courses/course-1.png" class="card-img-top rounded-3" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">React - The Complete</h4>
+                            <p class="card-text text">Reed Krakoff.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <a href="#"><i class="fas fa-star icon"></i></a>
+                                    <a href="#"><i class="fas fa-star icon"></i></a>
+                                    <a href="#"><i class="fas fa-star icon"></i></a>
+                                    <a href="#"><i class="fas fa-star icon"></i></a>
+                                    <a href="#"><i class="fas fa-star blank"></i></a>
+                                    <span class="number">4.5</span>
+                                </div>
+                                <div>
+                                    <a class="btn button text rounded-pill" href="#"><i class="far fa-clock"></i>
+                                        <span>1:30hr</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card mb-4 p-2" style="width: 22rem;">
+                        <img src="image/courses/course-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">Powerpoint 2020<br>
+                                Master Powerpoint Cour</h4>
+                            <p class="card-text text">Walter Scott</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <a href="#"><i class="fas fa-star icon"></i></a>
+                                    <a href="#"><i class="fas fa-star icon"></i></a>
+                                    <a href="#"><i class="fas fa-star icon"></i></a>
+                                    <a href="#"><i class="fas fa-star icon"></i></a>
+                                    <a href="#"><i class="fas fa-star blank"></i></a>
+                                    <span>4.5</span>
+                                </div>
+                                <div>
+                                    <a class="btn button text rounded-pill" href="#"><i class="far fa-clock"></i>
+                                        <span>1:30hr</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card mb-4 p-2" style="width: 22rem;">
+                        <img src="image/courses/course-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title">React - The Complete</h4>
+                            <p class="card-text text">Reed Krakoff.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <a href="#"><i class="fas fa-star icon"></i></a>
+                                    <a href="#"><i class="fas fa-star icon"></i></a>
+                                    <a href="#"><i class="fas fa-star icon"></i></a>
+                                    <a href="#"><i class="fas fa-star icon"></i></a>
+                                    <a href="#"><i class="fas fa-star blank"></i></a>
+                                    <span>4.5</span>
+                                </div>
+                                <div>
+                                    <a class="btn button text rounded-pill" href="#"><i class="far fa-clock"></i>
+                                        <span>1:30hr</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
